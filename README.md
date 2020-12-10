@@ -10,15 +10,16 @@ If `alpha` is too large, the accuracy of old classes will decrease very quickly.
 I set `T` as 2, I didn't try other values so I don't know whether there will be other values that lead to higher performance. If you want to know detail of this super-parameter, you can read this paper: https://arxiv.org/pdf/1503.02531.pdf。 This paper is the source of 'Knowledge Distillation'.
 There are some result:
 
-number of new classes   |   alpha   |   accuracy of old 1000 classes   |   accuracy of new classes
-      50                |    0.1    |               55.120\%            |           47.948%
-      50                |    0.3    |               51.512\%            |           54.664%
-      100               |    0.1    |               54.208\%            |           39.525%
-      100               |    0.3    |               50.002\%            |           48.092%
-      150               |    0.1    |               53.284\%            |           36.573%
-      150               |    0.3    |               49.116\%            |           45.284%
-      200               |    0.1    |               53.370\%            |           34.413%
-      200               |    0.3    |               49.342\%            |           44.492%
+      number of new classes   |   alpha   |   accuracy of old 1000 classes    |   accuracy of new classes         
+            ----              |    -----  |               ------              |          -------
+            50                |    0.1    |               55.120\%            |           47.948%
+            50                |    0.3    |               51.512\%            |           54.664%
+            100               |    0.1    |               54.208\%            |           39.525%
+            100               |    0.3    |               50.002\%            |           48.092%
+            150               |    0.1    |               53.284\%            |           36.573%
+            150               |    0.3    |               49.116\%            |           45.284%
+            200               |    0.1    |               53.370\%            |           34.413%
+            200               |    0.3    |               49.342\%            |           44.492%
       
  
 If I only add one class, the accuracy of the new class will be very high with a litle decrease of accuracy of old 1000 classes.
