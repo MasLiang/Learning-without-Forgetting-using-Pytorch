@@ -1,7 +1,7 @@
 # Learning-without-Forgetting-using-Pytorch
 This is the Pytorch implementation of LwF
 
-In my experiment, the baseline is Alexnet from Pytorch whose top1 accuracy is 56.518 and top5 accuracy is 79.070% (I only use top1 accuracy in my experiment following). I use CUB data set. The dataset.py refered to: https://github.com/weiaicunzai/Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks
+In my experiment, the baseline is Alexnet from Pytorch whose top1 accuracy is 56.518% and top5 accuracy is 79.070% (I only use top1 accuracy in my experiment following). I use CUB data set. The dataset.py refered to: https://github.com/weiaicunzai/Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks
 
 If you want to find the paper, you can click ：https://ieeexplore.ieee.org/document/8107520
 
@@ -25,4 +25,4 @@ There are some result:
 If I only add one class, the accuracy of the new class will be very high with a litle decrease of accuracy of old 1000 classes.
 I tried this in CUB data set and the ave-acc of new 200 classes is 80.98% and the accuracy of old 1000 classes is 55.035% (-1.465%).
 
-I holp you can chech your curves after implementing this code. You will find that, at the begining, the accuracy of new classes will be always 0 for some epoches but the accuracy of old classes will decrease quickly. I don't know why. If you have any interesting finding, please contact me.
+I holp you can check your curves after implementing this code. You will find that, at the begining, the accuracy of new classes will be always 0 for some epoches but the accuracy of old classes will decrease quickly. I don't know why. If you have any interesting finding, please contact me.
